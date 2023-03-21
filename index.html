@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <p>The sum of the numbers =<i id="sum"></i></p>
+    <p>The subtraction of the number =<i id="sub"></i></p>
+    <p>The multiplication of the number =<i id="multi"></i></p>
+    <p>The dividion of the number =<i id="div"></i></p>
+    <p>The exponential of the number =<i id="expo"></i></p>
+    <p>The modulus of the number =<i id="mod"></i></p>
+
+    <script>
+        //The operators for +
+        //Note the code return means terminate this code and return unless there is output
+        function sum(a, b){
+          let c = a+ b;
+          return c
+        }
+          console.log(sum())
+        document.getElementById('sum').innerHTML= sum(200, 29)
+
+        // The operators for -
+        function sub(x, y){
+          let z = x-y;
+          return z
+        }
+          console.log(sub())
+        document.getElementById('sub').innerHTML= sub(-300, 67)
+
+        // The operators for x
+        function multi(x, y){
+          let z = x*y;
+          return z
+        }
+          console.log(multi())
+        document.getElementById('multi').innerHTML= multi(11, 34)
+
+         // The operators for /
+        function div(x, y){
+          let z = x/y;
+          return z
+        }
+          console.log(div())
+        document.getElementById('div').innerHTML= div(70, 7)
+
+         // The operators for exp
+        function expo(a, b){
+          let c = a**b;
+          return c
+        }
+          console.log(expo())
+        document.getElementById('expo').innerHTML= expo(20, 9)
+
+         // The operators for %
+        function mod(p, q){
+          let r = p%q;
+          return r
+        }
+          console.log(mod())
+        document.getElementById('mod').innerHTML= mod(29, 14)
+
+    </script>
+</body>
+</html>
